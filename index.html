@@ -110,19 +110,18 @@
   }
   .print-btn:hover { background: #b06820; }
 
-  @media print {
-    body { background: white !important; margin: 0 !important; padding: 0 !important; }
+    @media print {
+    body { background: white !important; margin: 0 !important; padding: 0 !important; font-size: 12px !important; -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; color-adjust: exact !important; }
     .print-btn { display: none !important; }
     .page {
-      width: 100% !important;
-      min-height: unset !important;
-      height: auto !important;
+      width: 210mm !important;
+      height: 297mm !important;
       padding: 13mm 15mm !important;
       margin: 0 !important;
       box-shadow: none !important;
+      overflow: hidden;
       break-after: page;
       page-break-after: always;
-      display: block;
     }
     .page:last-of-type {
       break-after: auto !important;
@@ -270,7 +269,7 @@
     </div>
   </div>
   <div class="doc-footer">
-    <span>SukorADÓ · sukorado-konyveles.hu · sukorado@sukorado.hu · +36 30 493 3303</span>
+    <span>SukorADÓ · sukorado-konyveles.hu · <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="136066787c6172777c536066787c6172777c3d7b66">[email&#160;protected]</a> · +36 30 493 3303</span>
     <span>1 / 3</span>
   </div>
 </div>
@@ -354,7 +353,7 @@
     <p class="note">Az éves zárás díja a havi alapdíjban nem szerepel, évente egyszer kerül számlázásra.</p>
   </div>
   <div class="doc-footer">
-    <span>SukorADÓ · sukorado-konyveles.hu · sukorado@sukorado.hu · +36 30 493 3303</span>
+    <span>SukorADÓ · sukorado-konyveles.hu · <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="037076686c7162676c437076686c7162676c2d6b76">[email&#160;protected]</a> · +36 30 493 3303</span>
     <span>2 / 3</span>
   </div>
 </div>
@@ -482,12 +481,4 @@
         <strong>Pénztári mozgások</strong> – készpénzes tranzakciók &nbsp;·&nbsp;
         <strong>Vegyes tételek</strong> – bérkönyvelés, áfához kapcsolódó tételek (fordított áfa, eltérő időszaki áfa), elhatárolások, értékcsökkenés.
       </p>
-      <p style="margin-top:5px">Minél több tételt kell könyvelni, annál több munkaidőt igényel a pontos feldolgozás – ezért a tételszám az árajánlat egyik meghatározó összetevője.</p>
-    </div>
-  </div>
-  <div class="doc-footer">
-    <span>SukorADÓ · sukorado-konyveles.hu · sukorado@sukorado.hu · +36 30 493 3303</span>
-    <span>3 / 3</span>
-  </div>
-</div>
-r
+      <p style="margin-top:5px">Minél több tételt kell könyvelni, annál több munkaidőt igényel a pontos feldolgozás – ezért a t�
