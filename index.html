@@ -109,24 +109,30 @@
     z-index: 100;
   }
   .print-btn:hover { background: #b06820; }
-
-      @media print {
-    body { background: white !important; margin: 0 !important; padding: 0 !important; font-size: 12px !important; -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; color-adjust: exact !important; }
+  @media print {
+    body {
+      background: white !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
     .print-btn { display: none !important; }
     .page {
       width: 210mm !important;
-      min-height: unset !important;
+      min-height: 297mm !important;
       height: auto !important;
       padding: 13mm 15mm !important;
       margin: 0 !important;
       box-shadow: none !important;
-      overflow: visible !important;
+      background: white !important;
       break-after: page;
       page-break-after: always;
     }
     .page:last-of-type {
-      break-after: auto !important;
-      page-break-after: auto !important;
+      break-after: avoid !important;
+      page-break-after: avoid !important;
+      min-height: unset !important;
     }
     .section, .subsection {
       break-inside: avoid;
@@ -492,4 +498,9 @@
   </div>
 </div>
 
-<button class="p
+
+<button class="print-btn" onclick="window.print()" title="PDF mentés / Nyomtatás">
+  🖨️ Mentés PDF-ként
+</button>
+</body>
+</html>
